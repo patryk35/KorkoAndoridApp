@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.patryk.korko.activities.SearchActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.patryk.korko.activities.SearchActivity$PlaceholderFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Przedmiot"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/polishCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/wosCheckBox"
+                        android:text="J. polski"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/englishCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/polishCheckBox"
+                        android:text="J. angielski"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/mathCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView"
+                        android:text="Matematyka"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/phisicsCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/mathCheckBox"
+                        android:text="Fizyka"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/chemistryCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/phisicsCheckBox"
+                        android:text="Chemia"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/geographyCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/chemistryCheckBox"
+                        android:text="Geografia"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/biologyCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/geographyCheckBox"
+                        android:text="Biologia"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/historyCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/ITCheckBox"
+                        android:text="Historia"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/wosCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/historyCheckBox"
+                        android:text="Wiedza o społeczeństwie"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/OtherLanguageCheckBox"
+                        android:layout_weight="1"
+                        android:text="Poziom"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/levelElementaryCheckBox"
+                        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_weight="1"
+                        android:onClick="checkPriceStatus"
+                        android:text="Szkoła podstawowa"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/levelMiddleScholCheckBox"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/levelElementaryCheckBox"
+                        android:layout_weight="1"
+                        android:onClick="checkPriceStatus"
+                        android:text="Gimnazjum"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/levelHighSchoolCheckBox"
+                        style="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/levelMiddleScholCheckBox"
+                        android:layout_weight="1"
+                        android:onClick="checkPriceStatus"
+                        android:text="Liceum"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/levelStudyCheckBox"
+                        style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/levelHighSchoolCheckBox"
+                        android:layout_weight="1"
+                        android:onClick="checkPriceStatus"
+                        android:text="Studia"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/priceTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/levelStudyCheckBox"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible"/>
+
+                    <SeekBar
+                        android:id="@+id/priceSeekBar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/priceTextView"
+                        android:layout_toStartOf="@+id/levelStudyCheckBox"
+                        android:clickable="true"
+                        android:max="20"
+                        android:progress="5"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/areaTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/priceSeekBar"
+                        android:text="Obszar"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                        android:textColor="#FFFFFF"/>
+
+                    <SeekBar
+                        android:id="@+id/areaSeekBar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/areaTextView"
+                        android:max="50"
+                        android:progress="3"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

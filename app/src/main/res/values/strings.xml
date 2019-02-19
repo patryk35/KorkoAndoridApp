@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Korko</string>
+    <string name="facebook_app_id">SHOULD_BE_PROVIDED</string>
+    <string name="fb_login_protocol_scheme">SHOULD_BE_PROVIDED</string>
+    <string name="usu">Usuń</string>
+    <string-array name="subjects">
+        <item>Przedmiot</item>
+        <item>Polski</item>
+        <item>Matematyka</item>
+        <item>Biologia</item>
+        <item>Historia</item>
+        <item>Angielski</item>
+        <item>Wos</item>
+        <item>Fizyka</item>
+        <item>Chemia</item>
+        <item>Geografia</item>
+    </string-array>
+    <string-array name="prices">
+        <item>Cena</item>
+        <item>Brak</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>55</item>
+        <item>70</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>105</item>
+        <item>110</item>
+        <item>115</item>
+        <item>120</item>
+        <item>125</item>
+        <item>130</item>
+        <item>135</item>
+        <item>140</item>
+        <item>145</item>
+        <item>150</item>
+        <item>155</item>
+        <item>160</item>
+        <item>155</item>
+        <item>170</item>
+        <item>185</item>
+        <item>190</item>
+        <item>195</item>
+        <item>200</item>
+    </string-array>
+
+
+</resources>
